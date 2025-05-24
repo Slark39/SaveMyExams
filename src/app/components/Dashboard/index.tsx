@@ -193,9 +193,9 @@ export default function Dashboard() {
         <div className="text-center text-4xl font-bold mt-[48px]">
           Why it works
         </div>
-        <div className="flex flex-row gap-4 justify-between mt-[144px] items-center">
-          <div className="rounded shadow-[0_0_15px_0_rgba(0,0,0,0.15)] p-[24px] h-[358.8px] w-1/3 flex flex-col justify-between items-start">
-            <div className="flex flex-row justify-between gap-2 items-center relative">
+        <div className="flex lg:flex-row max-lg:flex-col lg:gap-4 max-lg:gap-28 justify-between mt-[144px] items-center">
+          <div className="rounded shadow-[0_0_15px_0_rgba(0,0,0,0.15)] p-[24px] h-[358.8px] lg:w-1/3 max-lg:w-[80%] flex flex-col justify-between items-start">
+            <div className="flex flex-row  justify-between gap-2 items-center relative">
               <Image
                 src={"/logo/revise-light.svg"}
                 alt="revise image"
@@ -232,7 +232,7 @@ export default function Dashboard() {
               </p>
             </div>
           </div>
-          <div className="rounded shadow-[0_0_15px_0_rgba(0,0,0,0.15)] p-[24px] h-[358.8px] w-1/3 flex flex-col justify-between items-start">
+          <div className="rounded shadow-[0_0_15px_0_rgba(0,0,0,0.15)] p-[24px] h-[358.8px] lg:w-1/3 max-lg:w-[80%] flex flex-col justify-between items-start">
             <div className="flex flex-row justify-between gap-2 items-center relative">
               <Image
                 src={"/logo/test-yourself-light.svg"}
@@ -264,7 +264,7 @@ export default function Dashboard() {
               </p>
             </div>
           </div>
-          <div className="w-1/3 relative">
+          <div className="lg:w-1/3 max-lg:w-[80%] relative">
             <Image
               src={"/logo/improve-light.svg"}
               alt="revise image"
@@ -302,7 +302,7 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-      <div className="w-[80%] mx-auto bg-[#fbfafa] h-[458px] p-[48px] mt-[64px] flex flex-col items-center justify-between">
+      <div className="lg:w-[80%] max-lg:w-full mx-auto bg-[#fbfafa] h-[458px] p-[48px] mt-[64px] flex flex-col items-center justify-between">
         <Image
           src={"/logo/get-started-light.svg"}
           alt="revise image"
@@ -311,8 +311,10 @@ export default function Dashboard() {
           className=" w-[181px] h-[134px] "
         />
         <h1>WHAT ARE YOU STUDYING?</h1>
-        <h1 className="text-5xl font-bold">Get started - for free</h1>
-        <div className="flex flex-row flex-wrap gap-2 w-1/2 items-center justify-center">
+        <h1 className="text-5xl font-bold text-center">
+          Get started - for free
+        </h1>
+        <div className="flex flex-row flex-wrap gap-2 lg:w-1/2 max-lg:w-[80%] items-center justify-center">
           <div className="rounded-full bg-[#eef2fe] text-primary text-lg py-[11px] px-[48px]">
             GCSE
           </div>
@@ -336,7 +338,7 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-      <div className="w-full mx-[149px] py-[48px] bg-[#fbfafa] h-[808px] mt-[48px] ">
+      <div className="w-full mx-auto py-[48px] bg-[#fbfafa] min-h-[808px] mt-[48px] ">
         <div className="max-w-[880px] flex flex-col justify-between items-center mx-auto">
           <h1 className="text-[32px] font-bold mb-[16px] text-center">
             Meet our experts
@@ -347,8 +349,8 @@ export default function Dashboard() {
             exactly what the examiners for each specific exam are looking for.
           </p>
           <p>We work harder so you can study smarter</p>
-          <div className="flex flex-row justify-between items-center w-full gap-4">
-            <div className="p-[24px] rounded-2xl mt-8 shadow-[0_0_15px_0_rgba(0,0,0,0.15)] h-[521px] w-1/2 flex flex-col justify-between items-center">
+          <div className="flex lg:flex-row max-lg:flex-col justify-between items-center w-full gap-4">
+            <div className="p-[24px] rounded-2xl mt-8 shadow-[0_0_15px_0_rgba(0,0,0,0.15)] h-[521px] lg:w-1/2 max-lg:w-[80%] flex flex-col justify-between items-center">
               <Image
                 src={"/logo/expert-jenna-quinn.webp"}
                 alt="revise image"
@@ -388,7 +390,7 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="p-[24px] rounded-2xl mt-8 shadow-[0_0_15px_0_rgba(0,0,0,0.15)] h-[521px] w-1/2 flex flex-col justify-between items-center">
+            <div className="p-[24px] rounded-2xl mt-8 shadow-[0_0_15px_0_rgba(0,0,0,0.15)] h-[521px] lg:w-1/2 max-lg:w-[80%] flex flex-col justify-between items-center">
               <Image
                 src={"/logo/expert-maths-lucy-kirkham.avif"}
                 alt="revise image"
@@ -429,6 +431,478 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="w-full mx-auto px-[12px] flex flex-col justify-between items-center py-[48px]">
+        <div className="mx-auto flex flex-col justify-between items-center">
+          <h1 className="text-5xl font-bold">
+            Choose your{" "}
+            <span className="relative">
+              subject
+              <Image
+                src={"/logo/circle.svg"}
+                alt="revise image"
+                width={200}
+                height={200}
+                className="absolute -top-[8px] right-0 w-[263px] h-[83px]"
+              />
+            </span>
+          </h1>
+          <div className="flex flex-row flex-wrap justify-center gap-2 mt-[24px] w-[80%]">
+            <div className="rounded-xl border-zinc-500 border-[1px] py-[7px] px-[20px]">
+              Biology
+            </div>
+            <div className="rounded-xl border-zinc-500 border-[1px] py-[7px] px-[20px]">
+              Maths
+            </div>
+            <div className="rounded-xl border-zinc-500 border-[1px] py-[7px] px-[20px]">
+              Chemistry
+            </div>
+            <div className="rounded-xl border-zinc-500 border-[1px] py-[7px] px-[20px]">
+              Physics
+            </div>
+            <div className="rounded-xl border-zinc-500 border-[1px] py-[7px] px-[20px]">
+              Economics
+            </div>
+            <div className="rounded-xl border-zinc-500 border-[1px] py-[7px] px-[20px]">
+              Geography
+            </div>
+            <div className="rounded-xl border-zinc-500 border-[1px] py-[7px] px-[20px]">
+              Business
+            </div>
+            <div className="rounded-xl border-zinc-500 border-[1px] py-[7px] px-[20px]">
+              English Literature
+            </div>
+            <div className="rounded-xl border-zinc-500 border-[1px] py-[7px] px-[20px]">
+              Psychology
+            </div>
+          </div>
+        </div>
+        <div className="mx-auto flex flex-col justify-between items-center mt-[48px]">
+          <h1 className="text-3xl text-center font-bold mb-[24px]">
+            Or pick from our most popular courses
+          </h1>
+          <div className="flex flex-row flex-wrap justify-center gap-2 lg:w-[80%] max-lg:w-full">
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-black p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6 text-white"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-green-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22a9 9 0 0 0 9-9 9 9 0 0 0-9 9zM5.6 10.25a2.5 2.5 0 0 0 3.92 2.06l-.02.19a2.5 2.5 0 0 0 5 0l-.02-.19c.4.28.89.44 1.42.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25a2.5 2.5 0 0 0-3.92-2.06l.02-.19a2.5 2.5 0 0 0-5 0l.02.19c-.4-.28-.89-.44-1.42-.44a2.5 2.5 0 0 0-2.5 2.5c0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5zM3 13a9 9 0 0 0 9 9 9 9 0 0 0-9-9z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-yellow-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="#ffffff"
+                  aria-hidden="true"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-yellow-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="#ffffff"
+                  aria-hidden="true"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-yellow-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="#ffffff"
+                  aria-hidden="true"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-green-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22a9 9 0 0 0 9-9 9 9 0 0 0-9 9zM5.6 10.25a2.5 2.5 0 0 0 3.92 2.06l-.02.19a2.5 2.5 0 0 0 5 0l-.02-.19c.4.28.89.44 1.42.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25a2.5 2.5 0 0 0-3.92-2.06l.02-.19a2.5 2.5 0 0 0-5 0l.02.19c-.4-.28-.89-.44-1.42-.44a2.5 2.5 0 0 0-2.5 2.5c0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5zM3 13a9 9 0 0 0 9 9 9 9 0 0 0-9-9z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-green-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22a9 9 0 0 0 9-9 9 9 0 0 0-9 9zM5.6 10.25a2.5 2.5 0 0 0 3.92 2.06l-.02.19a2.5 2.5 0 0 0 5 0l-.02-.19c.4.28.89.44 1.42.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25a2.5 2.5 0 0 0-3.92-2.06l.02-.19a2.5 2.5 0 0 0-5 0l.02.19c-.4-.28-.89-.44-1.42-.44a2.5 2.5 0 0 0-2.5 2.5c0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5zM3 13a9 9 0 0 0 9 9 9 9 0 0 0-9-9z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-green-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22a9 9 0 0 0 9-9 9 9 0 0 0-9 9zM5.6 10.25a2.5 2.5 0 0 0 3.92 2.06l-.02.19a2.5 2.5 0 0 0 5 0l-.02-.19c.4.28.89.44 1.42.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25a2.5 2.5 0 0 0-3.92-2.06l.02-.19a2.5 2.5 0 0 0-5 0l.02.19c-.4-.28-.89-.44-1.42-.44a2.5 2.5 0 0 0-2.5 2.5c0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5zM3 13a9 9 0 0 0 9 9 9 9 0 0 0-9-9z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-red-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5.97 4.06L14.09 6l1.41 1.41L16.91 6l1.06 1.06-1.41 1.41 1.41 1.41-1.06 1.06-1.41-1.4-1.41 1.41-1.06-1.06 1.41-1.41-1.41-1.42zm-6.78.66h5v1.5h-5v-1.5zM11.5 16h-2v2H8v-2H6v-1.5h2v-2h1.5v2h2V16zm6.5 1.25h-5v-1.5h5v1.5zm0-2.5h-5v-1.5h5v1.5z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-green-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22a9 9 0 0 0 9-9 9 9 0 0 0-9 9zM5.6 10.25a2.5 2.5 0 0 0 3.92 2.06l-.02.19a2.5 2.5 0 0 0 5 0l-.02-.19c.4.28.89.44 1.42.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25a2.5 2.5 0 0 0-3.92-2.06l.02-.19a2.5 2.5 0 0 0-5 0l.02.19c-.4-.28-.89-.44-1.42-.44a2.5 2.5 0 0 0-2.5 2.5c0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5zM3 13a9 9 0 0 0 9 9 9 9 0 0 0-9-9z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-yellow-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="#ffffff"
+                  aria-hidden="true"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.488.488 0 0 0-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 0 0-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-black p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6 text-white"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19.8 18.4 14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-green-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22a9 9 0 0 0 9-9 9 9 0 0 0-9 9zM5.6 10.25a2.5 2.5 0 0 0 3.92 2.06l-.02.19a2.5 2.5 0 0 0 5 0l-.02-.19c.4.28.89.44 1.42.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25a2.5 2.5 0 0 0-3.92-2.06l.02-.19a2.5 2.5 0 0 0-5 0l.02.19c-.4-.28-.89-.44-1.42-.44a2.5 2.5 0 0 0-2.5 2.5c0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5zM3 13a9 9 0 0 0 9 9 9 9 0 0 0-9-9z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-red-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5.97 4.06L14.09 6l1.41 1.41L16.91 6l1.06 1.06-1.41 1.41 1.41 1.41-1.06 1.06-1.41-1.4-1.41 1.41-1.06-1.06 1.41-1.41-1.41-1.42zm-6.78.66h5v1.5h-5v-1.5zM11.5 16h-2v2H8v-2H6v-1.5h2v-2h1.5v2h2V16zm6.5 1.25h-5v-1.5h5v1.5zm0-2.5h-5v-1.5h5v1.5z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+            <div className="rounded-xl flex flex-row justify-between items-center border-zinc-500 border-[1px] py-[7px] pr-[16px] pl-[8px]">
+              <span className="rounded-full bg-green-500 p-1 mr-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  aria-hidden="true"
+                  fill="#ffffff"
+                  className="Icon_icon__caLMg Icon_m__yfJZ6"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 22a9 9 0 0 0 9-9 9 9 0 0 0-9 9zM5.6 10.25a2.5 2.5 0 0 0 3.92 2.06l-.02.19a2.5 2.5 0 0 0 5 0l-.02-.19c.4.28.89.44 1.42.44a2.5 2.5 0 0 0 2.5-2.5c0-1-.59-1.85-1.43-2.25.84-.4 1.43-1.25 1.43-2.25a2.5 2.5 0 0 0-3.92-2.06l.02-.19a2.5 2.5 0 0 0-5 0l.02.19c-.4-.28-.89-.44-1.42-.44a2.5 2.5 0 0 0-2.5 2.5c0 1 .59 1.85 1.43 2.25-.84.4-1.43 1.25-1.43 2.25zM12 5.5a2.5 2.5 0 0 1 0 5 2.5 2.5 0 0 1 0-5zM3 13a9 9 0 0 0 9 9 9 9 0 0 0-9-9z"></path>
+                </svg>
+              </span>
+              GCSE Chemistry AQA
+            </div>
+          </div>
+          <div className="h-[1px] bg-zinc-500 w-[80%] mt-[48px]"></div>
+        </div>
+      </div>
+      <div className="lg:w-[60%] max-lg:[80%] mx-auto flex flex-col justify-between items-center">
+        <h1 className="text-lg py-[16px]">15,000+ REVIEWS AND COUNTING</h1>
+        <h1 className="text-5xl font-bold text-center">
+          Members{" "}
+          <span className="relative">
+            {" "}
+            <Image
+              src={"/logo/circle.svg"}
+              alt="revise image"
+              width={200}
+              height={200}
+              className="absolute -top-[12px] right-0 w-[263px] h-[83px]"
+            />
+            love
+          </span>{" "}
+          Save My Exams
+        </h1>
+        <div className="flex lg:flex-row max-lg:flex-col lg:gap-4 justify-between max-lg:items-center lg:items-start w-[80%]">
+          <div className="flex flex-col lg:w-1/2 max-lg:w-full justify-between items-center min-h-[1204px]">
+            <div className="rounded-xl bg-[#fbfafa] max-w-[388px] w-full  p-[16px] w flex flex-col justify-between items-start">
+              <Image
+                src={"/logo/book.png"}
+                alt="revise image"
+                width={200}
+                height={200}
+                className="w-[64px] h-[64px]"
+              />
+              <p className="font-bold text-2xl">
+                I would just like to say a massive thank you for putting
+                together such a brilliant, easy to use website. I really think
+                using this site helped me secure my top grades in science and
+                maths. You really did save my exams! Thank you.
+              </p>
+              <p className="text-lg mt-[16px]">Beth</p>
+              <p className="text-md">IGCSE Student</p>
+            </div>
+            <div className="rounded-xl bg-[#fbfafa] max-w-[388px] w-full  p-[16px] w flex flex-col justify-between items-start">
+              <Image
+                src={"/logo/plane.png"}
+                alt="revise image"
+                width={200}
+                height={200}
+                className="w-[64px] h-[64px]"
+              />
+              <p className="font-bold text-2xl">
+                Just to say that your resources are the best I have seen and I
+                have been teaching chemistry at different levels for about 40
+                years
+              </p>
+              <p className="text-lg mt-[16px]">Mark</p>
+              <p className="text-md">Chemistry Teacher</p>
+            </div>
+            <div className="rounded-xl bg-[#fbfafa] max-w-[388px] w-full  p-[16px] w flex flex-col justify-between items-start">
+              <Image
+                src={"/logo/bulb.png"}
+                alt="revise image"
+                width={200}
+                height={200}
+                className="w-[64px] h-[64px]"
+              />
+              <p className="font-bold text-2xl">
+                Absolutely brilliant, both my girls used it for A levels and
+                GCSE. It&apos;s saves on paper copies, also beneficial topic
+                questions ranked from easy to hard. It&apos;s removed a lot of
+                stress from the exams.
+              </p>
+              <p className="text-lg mt-[16px]">Sameera</p>
+              <p className="text-md">Parent</p>
+            </div>
+          </div>
+          <div className="flex flex-col lg:w-1/2 max-lg:w-[90%] justify-between items-center h-[1204px]">
+            <div className="rounded-xl bg-[#fbfafa] max-w-[388px] w-full  p-[16px] w flex flex-col justify-between items-start">
+              <Image
+                src={"/logo/pencil.png"}
+                alt="revise image"
+                width={200}
+                height={200}
+                className="w-[64px] h-[64px]"
+              />
+              <p className="font-bold text-2xl">
+                This website is soooo useful and I can&apos;t ever thank you
+                enough for organising questions by topic like this. Furthermore,
+                the name of the website could not have been more appropriate as
+                it literally did SAVE MY EXAMS!
+              </p>
+              <p className="text-lg mt-[16px]">Fathima</p>
+              <p className="text-md">A Level Student</p>
+            </div>
+            <div className="rounded-xl bg-[#fbfafa] max-w-[388px] w-full  p-[16px] w flex flex-col justify-between items-start">
+              <Image
+                src={"/logo/alarm.png"}
+                alt="revise image"
+                width={200}
+                height={200}
+                className="w-[64px] h-[64px]"
+              />
+              <p className="font-bold text-2xl">
+                Incredible! SO worth my money, the revision notes have
+                everything I need to know and are so easy to understand. I
+                actually enjoy revising! It makes me feel a lot more confident
+                for my GCSEs in a few months.
+              </p>
+              <p className="text-lg mt-[16px]">Kate</p>
+              <p className="text-md">GCSE Student</p>
+            </div>
+            <div className="rounded-xl bg-[#fbfafa] max-w-[388px] w-full h-[298px]  p-[16px] w flex flex-col justify-between items-start">
+              <p className="font-bold text-2xl text-center w-full">
+                Rated Excellent
+              </p>
+              <p className="text-md text-center w-full">ON TRUSTPILOT</p>
+              <div className="flex flex-row justify-center w-full items-center">
+                <Image
+                  src={"/logo/trustpilot.svg"}
+                  alt="revise image"
+                  width={200}
+                  height={200}
+                  className="w-[251px] h-[85px]"
+                />
+              </div>
+              <p className="text-md w-full flex flex-row justify-center items-center">
+                <button className="inline-flex items-center justify-center h-10 gap-2 px-5 text-sm font-medium tracking-wide text-white transition duration-300 rounded-full whitespace-nowrap bg-primary  hover:bg-primary-100 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                  <span>Read more reviews</span>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mx-auto w-[70%] px-[16px] mt-[96px] flex flex-col justify-between items-center">
+        <h1 className="text-3xl font-bold w-full text-center mb-[16px]">
+          Save My Exams is featured in
+        </h1>
+        <div className="w-full flex lg:flex-row max-lg:flex-col justify-between items-center">
+          <Image
+            src={"/logo/forbes-logo.svg"}
+            alt="revise image"
+            width={200}
+            height={200}
+            className="w-[200px] h-[150px]"
+          />
+          <Image
+            src={"/logo/daily-express-logo.svg"}
+            alt="revise image"
+            width={200}
+            height={200}
+            className="w-[200px] h-[150px]"
+          />
+          <Image
+            src={"/logo/metro-uk-logo.svg"}
+            alt="revise image"
+            width={200}
+            height={200}
+            className="w-[200px] h-[150px]"
+          />
+          <Image
+            src={"/logo/the-guardian-2018-logo.svg"}
+            alt="revise image"
+            width={200}
+            height={200}
+            className="w-[200px] h-[80px]"
+          />
         </div>
       </div>
     </div>
